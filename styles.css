@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+    --navbar-bg-color: #262626;
+    --navbar-text-color: #fff;
+    --navbar-active-color: #2196f3;
+
+    --banner-text-color: #fff;
+    --banner-bg-color: #262626;
+
+    --logo-text-color: #fff;
+
+    --content-text-color: #262626;
+
+    --footer-bg-color: #262626;
+    --footer-text-color: #262626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+}
+
+.banner::before {
+    width: 100%;
+    height: 100vh;
+    content: attr(data-banner-text);
+    background: rgba(0, 0, 0, .3);
+    color: var(--banner-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .8);
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navbar-bg-color);
+}
+
+.logo {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--logo-text-color);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.navbar ul li {
+    height: 100%;
+    list-style: none;
+    padding: 0 10px;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--navbar-text-color);
+}
+
+.active,
+.navbar ul li:hover {
+    background: var(--navbar-active-color);
+    color: var(--navbar-text-color);
+}
+
+.content {
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--footer-bg-color);
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--footer-text-color);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
