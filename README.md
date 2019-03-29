@@ -5,5 +5,5 @@
 <a href="https://djalmocruzjr.github.io/onlinetutorial-tutorial-sticky-navbar-after-some-scroll-in-html-and-css/" target="_blank">https://djalmocruzjr.github.io/onlinetutorial-tutorial-sticky-navbar-after-some-scroll-in-html-and-css</a>
   
 <h2>Screenshots</h2>
-<img src="">
+<img src="https://github.com/DjalmoCruzJr/onlinetutorial-tutorial-sticky-navbar-after-some-scroll-in-html-and-css/blob/master/screenshots/screenshot.gif?raw=true">
 
